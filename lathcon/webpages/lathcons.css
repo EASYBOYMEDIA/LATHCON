@@ -1,0 +1,499 @@
+body{
+    background-color: white;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+
+    max-inline-size: 1000px;
+    margin-inline:auto;
+}
+
+header{
+    background-color: white;
+    block-size: 70px;
+    box-shadow: 0px 3px 4px rgb(209, 209, 209);
+    margin: 0;
+    padding: 8px 10px;
+    
+    inline-size: 100%;
+    
+
+    display: flex;
+    text-wrap: nowrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+    flex: wrap;
+
+    position:fixed;
+    top: 0;
+
+    z-index: 500;
+   
+}
+
+.name-logo-container{
+    display: flex;
+    align-items: center;
+    inline-size: 40%;
+    block-size: 100%;
+
+    text-wrap: wrap;
+
+    margin-inline-start: 10px;
+}
+
+header p{
+    margin: 0;
+    font-size: .85rem;
+     
+}
+
+h1{
+    margin: 0;
+
+    font-size: 1.1rem;
+    
+}
+
+.logo{
+    block-size: 30px;
+    display: inline-block;
+}
+
+.header-class{
+    margin-inline-start: 10px;
+}
+
+
+.unordered{
+    display: none;
+}
+
+.handburger{
+    block-size: 30px;
+}
+
+.right-side{
+    margin-inline-end: 50px;
+    display: flex;
+}
+
+@media(min-width:1024px){
+    .unordered{
+        display: flex;
+        gap: .8rem;
+
+        list-style: none;
+
+        font-size: .75rem;
+    }
+
+    .handburger{
+        display: none;
+        block-size: 30px;
+    }
+
+    .right-side{
+        margin-inline-end: 50px;
+        display: flex;
+    }
+}
+.handburger-overlay{
+    background-color: white;
+    padding-block-end: 20px;
+    
+    margin-block-end: 40px;
+    position:fixed;
+    top: 70px;
+    inset-inline: 0;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.handburger-overlay:target{
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.handburger-list{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.handburger-link{
+    text-decoration: none;
+    position: absolute;
+   
+    right:43px;
+
+    font-size: 2rem;
+    background-color: white;
+    padding: 3px 6px;
+    color: black;
+    border-radius: 5px;
+
+}
+
+.handburger-link:hover{
+    background-color: rgb(105, 104, 104);
+    padding: 3px 6px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+main{
+    margin-block-start:75px;
+}
+
+.application-text{
+    block-size: 50px;
+   
+
+    text-wrap: nowrap;
+    align-content: center;
+
+    padding-inline: 20px;
+
+}
+
+.started-text{
+    font-weight: bold;
+    margin: 5px 0;
+    color: rgb(146 64 14 );
+  
+}
+
+
+@media(min-width:510px){
+    .application-text{
+    block-size: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    
+
+    text-wrap: nowrap;
+    align-items: center;
+    }
+
+    .application-text p{
+    margin: 0;
+    }
+}
+
+.continue-text{
+    background-color: rgb(146 64 14 );
+    color: white;
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+
+    display: inline-block;
+    border-radius: 5px;
+}
+.content-display{
+    inline-size: 100%;
+    block-size:70vh;
+    background-color: red;
+    background-image: url(/lathcon/img/8feb4b95-fb58-4614-9157-828f8f28cb13.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+  
+    position: relative;
+
+    text-align: center;
+
+}
+.image1{
+   max-inline-size: 100%;
+   
+}
+.content-display-overlay{
+    position: absolute;
+    background-color: rgba(71, 71, 255, 0.25);
+    inset: 0;
+   
+}
+
+.content{
+    position:absolute;
+    padding-block-start: 100px;
+    inset-inline: 10px;
+    inset-block:5px;
+
+    overflow: hidden;
+}
+h2{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0;
+}
+
+.content p{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.button1{
+    padding: 8px 20px;
+    margin-inline-start: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2d7ddf;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.button2{
+    padding: 8px 20px;
+    margin-inline-start: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.border-container{
+    background-color: white;
+    display: inline-block;
+  
+
+    margin: 10px 0 0 15px;
+    padding: 25px 50px 5px 13px;
+ 
+
+    box-shadow: 0px 0px 8px 1px rgba(197, 196, 196, 0.9);
+}
+
+.icon-1{
+    block-size: 32px;
+    padding-top: 3px;
+    padding-left: 2px;
+ 
+    
+}
+.icon-container{
+    background-color: rgb(37, 99, 235);
+    inline-size: 38px;
+    block-size: 38px;
+    border-radius: 49%;
+    display: inline-block
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: black;
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+
+.stay-text{
+    margin: 0;
+    color: rgb(0, 0, 0,0.7);
+    font-size: 1rem;
+}
+
+h5{
+    color: rgb(37, 99, 235);
+    font-size: 1rem;
+}
+
+section{
+    margin-block-start: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media(max-width:756px){
+    section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+}
+}
+
+.CMD-Message{
+    margin-block-start: 30px;
+    padding: 20px 10px;
+
+    box-shadow:0 -5px 10px rgba(0,0,0, 0.3);
+}
+
+@media(min-width:1024px){
+    .CMD-Message{
+    place-content: center;
+    display: grid;
+    grid-template-columns: 450px 500px;
+    margin-block-start: 30px;
+    padding: 70px 40px;
+
+    box-shadow:0 -5px 10px rgba(0,0,0, 0.1);
+    }       
+}
+
+.CMD-Message h1{
+    font-size: 2.2rem;
+}
+
+.paragraph{
+    font-size: 1.15rem;
+    line-height: 1.7rem; 
+    color: rgb(0, 0, 0,0.8);
+}
+
+.CMD-NAME,
+.CMD-POSITION,
+.CMD-SCHOOL{
+    margin: 0;
+   
+}
+
+.CMD-NAME{
+    color: black;
+    font-weight: bold;
+}
+
+.CMD-POSITION{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(37, 99, 235);
+}
+
+
+.PP{
+    block-size: 120px;
+    inline-size: 100px;
+    border-radius: 50px;
+
+    margin-block-end: 20px;
+}
+
+.name,
+.position,
+.cert{
+    margin-block: 4px;
+     
+}
+
+span{
+    display: block;
+}
+
+.CMD-DETAILS{
+    place-self: center;
+    inline-size: 97%;
+    padding:25px 0;
+    margin-block-start: 20px;
+    text-align: center;
+    background-color: rgba(147, 181, 255, 0.3);
+
+    box-shadow: 0 5px 10px rgba(197, 196, 196, 0.9);
+}
+
+.name{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.position{
+    font-size: 1.3rem;
+    color: rgb(37 99 235);
+}
+.cert{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0,0.8);
+}
+
+footer{
+    background-color: rgb(30 58 138);
+    color: white;
+    font-size: 1.2rem;
+    padding-inline: 20px;
+
+    padding-block: 50px;
+}
+
+.ft-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-inline: 50px 0px;
+}
+
+
+.ft-text{
+    color: rgb(219, 230, 255);
+    margin: 0;
+    margin-block-end: 10px;
+}
+
+.ft-LAUTECH{
+    font-size: 1.6rem;
+    margin: 0;
+    margin-inline-start: 10px;
+}
+
+footer img{
+    block-size: 50px;
+    display: inline-block;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.ft-link,
+.ft-info,
+.ft-resources{
+    font-size: 1.4rem;
+}
+
+ol{
+    list-style: none;
+    margin-inline-start: -40px;
+    line-height: 2.5rem;
+}
+
+.ft-word{
+    border-top: 2px solid  rgba(185, 204, 255, 0.6);
+    text-align: center;
+}
+
+@media(max-width:756px){
+ .ft-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    padding-inline: 50px 0px;
+    }   
+
+    .footer-logo{
+    display: inline;
+    }
+
+    .ft-LAUTECH{
+    font-size: 1.6rem;
+    margin: 0;
+    }
+}
