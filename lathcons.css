@@ -5,11 +5,11 @@ body{
     margin: 0;
     padding: 0;
 
-    max-inline-size: 1000px;
-    margin-inline:auto;
 }
 
+
 header{
+
     background-color: white;
     block-size: 70px;
     box-shadow: 0px 3px 4px rgb(209, 209, 209);
@@ -33,6 +33,27 @@ header{
 
     z-index: 500;
    
+}
+
+.header-wrapper{    
+    margin: 0;
+    padding: 8px 10px;
+    
+    inline-size: 100%;
+    
+
+    display: flex;
+    text-wrap: nowrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+    flex: wrap;
+
+    max-inline-size: 1000px;
+    margin-inline: auto;
+
 }
 
 .name-logo-container{
@@ -165,6 +186,11 @@ main{
 
     padding-inline: 20px;
 
+}
+
+.application-text-wrapper{
+    max-inline-size: 1000px;
+    margin-inline: auto;
 }
 
 .started-text{
@@ -323,6 +349,9 @@ section{
     margin-block-start: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
+    max-inline-size: 1000px;
+    margin-inline: auto;
 }
 
 @media(max-width:756px){
@@ -341,15 +370,20 @@ section{
 }
 
 @media(min-width:1024px){
-    .CMD-Message{
+    .CMD-Message-wrapper{
     place-content: center;
     display: grid;
     grid-template-columns: 450px 500px;
     margin-block-start: 30px;
     padding: 70px 40px;
 
-    box-shadow:0 -5px 10px rgba(0,0,0, 0.1);
+   
     }       
+}
+
+.CMD-Message-wrapper{
+    max-inline-size: 1000px;
+    margin-inline: auto;
 }
 
 .CMD-Message h1{
@@ -431,7 +465,15 @@ footer{
     padding-inline: 20px;
 
     padding-block: 50px;
+
+
 }
+
+.footer-wrapper{
+    max-inline-size: 1000px;
+    margin-inline: auto;
+}
+
 
 .ft-container{
     display: grid;
